@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Audio Listener</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+navigator.mediaDevices.getUserMedia({ audio: true }).then(function(stream) {
+  // The user has granted permission to use the microphone
+  // Create a new audio element
+  var audio = new Audio();
+  
+  // Set the audio source to the microphone stream
+  audio.srcObject = stream;
+  
+//   // Create an audio context
+// var audioContext = new AudioContext();
+
+// // Create an analyser node
+// var analyser = audioContext.createAnalyser();
+
+// // Set the FFT size (number of frequency bins)
+// analyser.fftSize = 2048;
+
+// // Get the frequency data from the analyser node
+// var dataArray = new Uint8Array(analyser.frequencyBinCount);
+
+// // Connect the audio element to the analyser node
+// audio.connect(analyser);
+
+// Start playing the audio
+audio.play();
+
+// // Create a canvas element to draw the bar chart
+// var canvas = document.createElement("canvas");
+
+// // Set the canvas width and height to the FFT size
+// canvas.width = analyser.fftSize;
+// canvas.height = 256;
+
+// // Get the canvas context
+// var ctx = canvas.getContext("2d");
+
+// // Set the fill style to a gradient
+// var gradient = ctx.createLinearGradient(0, 0, 0, 256);
+// gradient.addColorStop(0, "red");
+// gradient.addColorStop(0.5, "yellow");
+// gradient.addColorStop(1, "green");
+// ctx.fillStyle = gradient;
+
+// // Set the update interval
+// var interval = 1000 / 60; // 60 FPS
+
+// // Start the update loop
+// setInterval(function() {
+//   // Get the frequency data from the analyser node
+//   analyser.getByteFrequencyData(dataArray);
+
+//   // Clear the canvas
+//   ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+//   // Draw the bar chart
+//   for (var i = 0; i < dataArray.length; i++) {
+//     var value = dataArray[i];
+//     ctx.fillRect(i, canvas.height, 1, -value);
+//   }
+// }, interval);
+});
+
+
+</script>
+</body>
+</html>
