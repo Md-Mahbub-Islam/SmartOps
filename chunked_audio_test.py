@@ -7,7 +7,7 @@ import wave
 def main():
 
     # Open the WAV file
-    with sf.SoundFile('cut.wav') as f:
+    with sf.SoundFile("test.wav", "r+") as f:
         # Set the parameters for the audio chunk
         chunk_size = 1024
         channels = f.channels
