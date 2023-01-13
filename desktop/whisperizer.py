@@ -1,6 +1,7 @@
 import whisper
 from pydub import AudioSegment
 import os
+import json
 
 model = whisper.load_model('base')
 
@@ -28,7 +29,7 @@ def AudioTrunkizer(sound_file):
     #duration of the chunk
     d_ch = 5
 
-    nn = 0 #number of chunks
+    nn = int(trunks)
 
 
     for i in range(0, int(trunks)):
@@ -43,13 +44,21 @@ def AudioTrunkizer(sound_file):
         extract = sound[StrtTime:EndTime]
         # Saving file in required location
         extract.export(f"trunks/US_{StrtMin}-{EndMin}.mp3", format="mp3")
+        
+    #save number of chunks to json
+    with open('trunks/chunk_size.json', 'w') as f:
+        json.dump(nn, f)
 
 
 def DoTranscribe(sound_file, language='en'):
-    print('Transcribing ' + sound_file)
-    text = model.transcribe(sound_file)
-    print(text)
+    #load number of chunks
+    nn = 0
+    with open('trunks/chunk_size.json', 'r') as f:
+        nn = json.load(f)
 
+    for i in range(0, int(trunks)):
+        
+    
 
 if __name__ == '__main__':
     AudioTrunkizer('..\cut.wav')
