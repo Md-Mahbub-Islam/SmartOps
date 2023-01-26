@@ -1,13 +1,9 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import views, response
+from django.http import HttpResponse
 from ourapp.models import Paragraph
-from ourapp.api.serializers import ParagraphSerializer
+from rest_framework import views
 
 class ParagraphView(views.APIView):
     def get(self, request, pk):
         paragraph = get_object_or_404(Paragraph, pk=pk)
-        serializer = ParagraphSerializer(paragraph)
-        return response.Response(serializer.data)
-
-
-# Create your views here.
+        return HttpResponse(paragraph.text, content_type="text/plain")
