@@ -1,0 +1,204 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 26.7rem;
+}.ship-icon-C6G {
+  box-sizing: border-box;
+  padding: 4rem 3.3rem 4.9rem 3.4rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: solid 0.1rem #9747ff;
+  border-radius: 0.5rem;
+}
+.ship-icon-C6G .property-1default-HNc {
+  margin-bottom: 4.8rem;
+  box-sizing: border-box;
+  padding: 3.117rem 3.4rem 4rem 3.3rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #28a0ff;
+  border-radius: 10rem;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1default-HNc .ship-BD6 {
+  margin: 0rem 0rem 0.417rem 0.101rem;
+  width: 8.3343rem;
+  height: 9.1667rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1default-HNc .ship-name-5JU {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1variant2-6Da {
+  margin-bottom: 5.3rem;
+  box-sizing: border-box;
+  padding: 3.117rem 3.4rem 4rem 3.3rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #5779a2;
+  border-radius: 10rem;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1variant2-6Da .ship-YrG {
+  margin: 0rem 0rem 0.417rem 0.101rem;
+  width: 8.3343rem;
+  height: 9.1667rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1variant2-6Da .ship-name-4Jp {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1variant3-MYp {
+  margin-bottom: 4.8rem;
+  box-sizing: border-box;
+  padding: 3.117rem 3.4rem 4rem 3.3rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ababab;
+  border-radius: 10rem;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1variant3-MYp .ship-FeC {
+  margin: 0rem 0rem 0.417rem 0.101rem;
+  width: 8.3343rem;
+  height: 9.1667rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1variant3-MYp .ship-name-mMe {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1variant7-eRS {
+  margin-bottom: 5.1rem;
+  box-sizing: border-box;
+  padding: 3.117rem 3.4rem 4rem 3.3rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: solid 1rem #ffffff;
+  background-color: #28a0ff;
+  border-radius: 10rem;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1variant7-eRS .ship-gsv {
+  margin: 0rem 0rem 0.417rem 0.101rem;
+  width: 8.3343rem;
+  height: 9.1667rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1variant7-eRS .ship-name-8jv {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1ellipse-1-property-2property-27-vvg {
+  margin-bottom: 4.8rem;
+  box-sizing: border-box;
+  padding: 3.117rem 3.4rem 4rem 3.3rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: solid 1rem #ffffff;
+  background-color: #5779a2;
+  border-radius: 10rem;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1ellipse-1-property-2property-27-vvg .ship-1BS {
+  margin: 0rem 0rem 0.417rem 0.101rem;
+  width: 8.3343rem;
+  height: 9.1667rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1ellipse-1-property-2property-27-vvg .ship-name-5SC {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1ellipse-1-property-2property-27-Ld2 {
+  box-sizing: border-box;
+  padding: 3.117rem 3.4rem 4rem 3.3rem;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: solid 1rem #ffffff;
+  background-color: #ababab;
+  border-radius: 10rem;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1ellipse-1-property-2property-27-Ld2 .ship-2Ex {
+  margin: 0rem 0rem 0.417rem 0.101rem;
+  width: 8.3343rem;
+  height: 9.1667rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.ship-icon-C6G .property-1ellipse-1-property-2property-27-Ld2 .ship-name-Kjr {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.3625;
+  color: #ffffff;
+  font-family: Open Sans, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}

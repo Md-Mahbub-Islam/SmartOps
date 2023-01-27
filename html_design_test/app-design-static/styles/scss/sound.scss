@@ -1,0 +1,44 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 35.915rem;
+}.sound-kAx {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  box-sizing: border-box;
+  border: solid 0.1rem #9747ff;
+  border-radius: 0.5rem;
+
+  .property-1default-FdW {
+    width: 31.915rem;
+    height: 12.369rem;
+    object-fit: contain;
+    vertical-align: top;
+    flex-shrink: 0;
+    margin-bottom: 2rem;
+  }
+  .property-1variant2-ZeC {
+    width: 31.915rem;
+    height: 12.369rem;
+    object-fit: contain;
+    vertical-align: top;
+    flex-shrink: 0;
+  }
+}

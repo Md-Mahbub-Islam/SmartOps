@@ -1,0 +1,325 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 34rem;
+}.message-bob-ym6 {
+  box-sizing: border-box;
+  padding: 2.8rem 2rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  row-gap: 3.6rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border: solid 0.1rem #9747ff;
+  border-radius: 0.5rem;
+}
+.message-bob-ym6 .property-1default-fP2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1default-fP2 .reply-Q5i {
+  margin-right: 11.5rem;
+  width: calc(100% - 11.5rem);
+  height: 4rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1default-fP2 .reply-Q5i .auto-group-87qp-7kp {
+  margin-right: 1.2rem;
+  width: 10.2rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1default-fP2 .reply-Q5i .auto-group-87qp-7kp .avatars-D3A {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: #303239;
+  border-radius: 5rem;
+}
+.message-bob-ym6 .property-1default-fP2 .reply-Q5i .auto-group-87qp-7kp .avatars-D3A .avatar-XJk {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.message-bob-ym6 .property-1default-fP2 .reply-Q5i .auto-group-87qp-7kp .name-1ji {
+  width: 10.2rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Rubik, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.message-bob-ym6 .property-1default-fP2 .reply-Q5i .time-HSL {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bebebe;
+  font-family: Rubik, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1default-fP2 .onversation-bubble-CZJ {
+  box-sizing: border-box;
+  padding: 1.2rem 1.6rem;
+  width: 100%;
+  height: 7.2rem;
+  background-color: #28a0ff;
+  border-radius: 0 2.4rem 2.4rem 2.4rem;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1default-fP2 .onversation-bubble-CZJ .text-VoJ {
+  max-width: 24.6rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Rubik, 'Source Sans Pro';
+}
+.message-bob-ym6 .property-1default-fP2 .onversation-bubble-CZJ .text-VoJ .text-VoJ-sub-0 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Rubik, 'Source Sans Pro';
+}
+.message-bob-ym6 .property-1default-fP2 .onversation-bubble-CZJ .text-VoJ .text-VoJ-sub-1 {
+}
+.message-bob-ym6 .property-1default-fP2 .onversation-bubble-CZJ .text-VoJ .text-VoJ-sub-2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Rubik, 'Source Sans Pro';
+}
+.message-bob-ym6 .property-1default-fP2 .onversation-bubble-CZJ .text-VoJ .text-VoJ-sub-3 {
+}
+.message-bob-ym6 .property-1variant2-Bi4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1variant2-Bi4 .reply-WEY {
+  margin-right: 11.5rem;
+  width: calc(100% - 11.5rem);
+  height: 4rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1variant2-Bi4 .reply-WEY .auto-group-5xjs-2Tn {
+  margin-right: 1.2rem;
+  width: 10.2rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1variant2-Bi4 .reply-WEY .auto-group-5xjs-2Tn .avatars-wak {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: #303239;
+  border-radius: 5rem;
+}
+.message-bob-ym6 .property-1variant2-Bi4 .reply-WEY .auto-group-5xjs-2Tn .avatars-wak .avatar-F5e {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.message-bob-ym6 .property-1variant2-Bi4 .reply-WEY .auto-group-5xjs-2Tn .name-Y4k {
+  width: 10.2rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Rubik, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.message-bob-ym6 .property-1variant2-Bi4 .reply-WEY .time-drt {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bebebe;
+  font-family: Rubik, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1variant2-Bi4 .onversation-bubble-x8U {
+  box-sizing: border-box;
+  padding: 1.2rem 1.6rem;
+  width: 100%;
+  height: 7.2rem;
+  background-color: #1f1f1f;
+  border-radius: 0 2.4rem 2.4rem 2.4rem;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1variant2-Bi4 .onversation-bubble-x8U .text-sFS {
+  max-width: 23.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Rubik, 'Source Sans Pro';
+}
+.message-bob-ym6 .property-1variant2-Bi4 .onversation-bubble-x8U .text-sFS .text-sFS-sub-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5779a2;
+  font-family: Rubik, 'Source Sans Pro';
+}
+.message-bob-ym6 .property-1variant2-Bi4 .onversation-bubble-x8U .text-sFS .text-sFS-sub-1 {
+}
+.message-bob-ym6 .property-1variant2-Bi4 .onversation-bubble-x8U .text-sFS .text-sFS-sub-2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #28a0ff;
+  font-family: Rubik, 'Source Sans Pro';
+}
+.message-bob-ym6 .property-1variant2-Bi4 .onversation-bubble-x8U .text-sFS .text-sFS-sub-3 {
+}
+.message-bob-ym6 .property-1variant2-Bi4 .onversation-bubble-x8U .text-sFS .text-sFS-sub-4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fd9494;
+  font-family: Rubik, 'Source Sans Pro';
+}
+.message-bob-ym6 .property-1variant3-2Jg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1variant3-2Jg .reply-LaG {
+  margin-right: 11.5rem;
+  width: calc(100% - 11.5rem);
+  height: 4rem;
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1variant3-2Jg .reply-LaG .auto-group-iswi-fMe {
+  margin-right: 1.2rem;
+  width: 10.2rem;
+  height: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1variant3-2Jg .reply-LaG .auto-group-iswi-fMe .avatars-PYY {
+  width: 4rem;
+  height: 4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: #303239;
+  border-radius: 5rem;
+}
+.message-bob-ym6 .property-1variant3-2Jg .reply-LaG .auto-group-iswi-fMe .avatars-PYY .avatar-j6c {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.message-bob-ym6 .property-1variant3-2Jg .reply-LaG .auto-group-iswi-fMe .name-pdr {
+  width: 10.2rem;
+  height: 2.4rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Rubik, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.message-bob-ym6 .property-1variant3-2Jg .reply-LaG .time-VV6 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bebebe;
+  font-family: Rubik, 'Source Sans Pro';
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1variant3-2Jg .onversation-bubble-Q6G {
+  box-sizing: border-box;
+  padding: 1.2rem 1.6rem;
+  width: 100%;
+  height: 7.2rem;
+  background-color: #363636;
+  border-radius: 0 2.4rem 2.4rem 2.4rem;
+  flex-shrink: 0;
+}
+.message-bob-ym6 .property-1variant3-2Jg .onversation-bubble-Q6G .text-Wuz {
+  max-width: 23.7rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Rubik, 'Source Sans Pro';
+}
+.message-bob-ym6 .property-1variant3-2Jg .onversation-bubble-Q6G .text-Wuz .text-Wuz-sub-0 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #5779a2;
+  font-family: Rubik, 'Source Sans Pro';
+}
+.message-bob-ym6 .property-1variant3-2Jg .onversation-bubble-Q6G .text-Wuz .text-Wuz-sub-1 {
+}
+.message-bob-ym6 .property-1variant3-2Jg .onversation-bubble-Q6G .text-Wuz .text-Wuz-sub-2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #28a0ff;
+  font-family: Rubik, 'Source Sans Pro';
+}
+.message-bob-ym6 .property-1variant3-2Jg .onversation-bubble-Q6G .text-Wuz .text-Wuz-sub-3 {
+}
+.message-bob-ym6 .property-1variant3-2Jg .onversation-bubble-Q6G .text-Wuz .text-Wuz-sub-4 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fd9494;
+  font-family: Rubik, 'Source Sans Pro';
+}

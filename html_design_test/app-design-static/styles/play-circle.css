@@ -1,0 +1,42 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 24rem;
+}.play-circle-cPW {
+  box-sizing: border-box;
+  padding: 2rem 2rem 20rem 2rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: solid 0.1rem #9747ff;
+  border-radius: 0.5rem;
+}
+.play-circle-cPW .property-1default-KHv {
+  margin-bottom: 4rem;
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}
+.play-circle-cPW .property-1variant2-2y2 {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+  vertical-align: top;
+  flex-shrink: 0;
+}

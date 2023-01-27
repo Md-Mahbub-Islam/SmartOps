@@ -1,0 +1,91 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 256rem;
+}.nav-bar-EkU {
+  display: flex;
+  align-items: center;
+  background-color: #363636;
+  box-sizing: border-box;
+  padding: 2.1rem 5.2rem 2.105rem 6rem;
+  width: 100%;
+
+  .group-1-KG8 {
+    margin-right: 153.4rem;
+    height: 7.7952rem;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+
+    .frame-DMW {
+      height: 7.7954rem;
+      object-fit: contain;
+      vertical-align: top;
+      flex-shrink: 0;
+      margin-right: 3.1003rem;
+      width: 9.9997rem;
+    }
+    .smartvhf-VZv {
+      flex-shrink: 0;
+      margin-top: 0.5048rem;
+      font-size: 4.6rem;
+      font-weight: 400;
+      line-height: 1.3625;
+      font-family: Open Sans, 'Source Sans Pro';
+      white-space: nowrap;
+    }
+  }
+  .home-nJ8 {
+    text-decoration-line: underline;
+    white-space: nowrap;
+    flex-shrink: 0;
+    font-weight: 400;
+    font-size: 2.4rem;
+    line-height: 1.3625;
+    color: #28a0ff;
+    font-family: Open Sans, 'Source Sans Pro';
+    margin: 0.505rem 6.4rem 0rem 0rem;
+  }
+  .about-TQG {
+    line-height: 1.3625;
+    color: #5779a2;
+    font-family: Open Sans, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin: 0.505rem 6.6rem 0rem 0rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+  }
+  .terms-of-use-MkY {
+    color: #5779a2;
+    font-family: Open Sans, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin: 0.505rem 6.8rem 0rem 0rem;
+    font-size: 2.4rem;
+    font-weight: 400;
+    line-height: 1.3625;
+  }
+  .contact-rxC {
+    font-weight: 400;
+    line-height: 1.3625;
+    color: #5779a2;
+    font-family: Open Sans, 'Source Sans Pro';
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-top: 0.5048rem;
+    font-size: 2.4rem;
+  }
+}
