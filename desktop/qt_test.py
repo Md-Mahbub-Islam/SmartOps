@@ -28,6 +28,13 @@ class SoundThread(QtCore.QThread):
         play(sound)
         self.finished.emit()
 
+class MapThread(QtCore.QThread):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+
+    def run(self):
+        
+        self.finished.emit()
 
 class MapWindow(QtWidgets.QDialog):
     def __init__(self, parent=None):
@@ -37,6 +44,7 @@ class MapWindow(QtWidgets.QDialog):
         self.webEngineView.setUrl(QtCore.QUrl("https://www.google.com/maps"))
         layout = QtWidgets.QVBoxLayout(self)
         layout.addWidget(self.webEngineView)
+
 time = 0
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, *args, **kwargs):
@@ -110,7 +118,7 @@ class MainWindow(QtWidgets.QMainWindow):
             tr = json.load(f)
         
         segments = tr["segments"]
-        print(f"Time: {time}")
+        #print(f"Time: {time}")
         for segment in segments:
             if segment["start"] <= time <= segment["end"]:
                 self.label.setText(segment["text"])
