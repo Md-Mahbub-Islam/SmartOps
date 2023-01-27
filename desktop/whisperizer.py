@@ -1,9 +1,9 @@
-import whisper
+# import whisper
 from pydub import AudioSegment
 import os
 import json
 
-model = whisper.load_model('base')
+# model = whisper.load_model('base')
 
 def AudioChunkizer(sound_file):
 
@@ -43,32 +43,32 @@ def AudioChunkizer(sound_file):
         # Opening file and extracting portion of it
         extract = sound[StrtTime:EndTime]
         # Saving file in required location
-        extract.export(f"chunks/US_{StrtMin}-{EndMin}.mp3", format="mp3")
+        extract.export(f"chunks/US_{StrtMin}-{EndMin}.wav", format="wav")
         
     #save number of chunks to json
     with open('chunks/chunk_size.json', 'w') as f:
         json.dump(nn, f)
 
-def Chunkscribe():
-    #load number of chunks
-    nn = 0
-    with open('chunks/chunk_size.json', 'r') as f:
-        nn = json.load(f)
+# def Chunkscribe():
+#     #load number of chunks
+#     nn = 0
+#     with open('chunks/chunk_size.json', 'r') as f:
+#         nn = json.load(f)
 
-    print(nn)
-    for i in range(0, nn):
-        t_text = DoTranscribe(f'chunks/US_{i*5}-{i*5+5}.mp3')
-        with open('chunks/US_{i*5}-{i*5+5}.txt', 'w') as f:
-            json.dump(t_text, f)
+#     print(nn)
+#     for i in range(0, nn):
+#         t_text = DoTranscribe(f'chunks/US_{i*5}-{i*5+5}.wav')
+#         with open('chunks/US_{i*5}-{i*5+5}.txt', 'w') as f:
+#             json.dump(t_text, f)
 
 
-def DoTranscribe(sound_file, language='en'):
-    t_text = model.transcribe(sound_file, language='en')
-    print(t_text)
-    return t_text
+# def DoTranscribe(sound_file, language='en'):
+#     t_text = model.transcribe(sound_file, language='en')
+#     print(t_text)
+#     return t_text
         
     
 
 if __name__ == '__main__':
-    #AudioChunkizer('..\cut.wav')
-    Chunkscribe()
+    AudioChunkizer('..\cut.wav')
+    #Chunkscribe()
