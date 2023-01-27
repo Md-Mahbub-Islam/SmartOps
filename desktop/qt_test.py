@@ -1,9 +1,23 @@
 from PyQt5 import QtCore, QtGui, QtWidgets, QtWebEngineWidgets, QtWebEngineCore, QtWebChannel
 import sys
+from PyQt5.QtCore import QThread, pyqtSignal, QObject, QUrl, QTimer
+
 
 import threading
 from pydub import AudioSegment
 from pydub.playback import play
+import json
+
+trt = "data.json"
+
+
+class UpdateLabel(QtCore.QThread):
+    def __init__(self, parent=None):
+        super().__init__(parent)
+
+    def run(self, time, ui):
+        tt = int(time)
+        ui.label.setText(tt)
 
 class SoundThread(QtCore.QThread):
     def __init__(self, parent=None):
@@ -23,13 +37,13 @@ class MapWindow(QtWidgets.QDialog):
         self.webEngineView.setUrl(QtCore.QUrl("https://www.google.com/maps"))
         layout = QtWidgets.QVBoxLayout(self)
         layout.addWidget(self.webEngineView)
-
+time = 0
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
 
         self.setWindowTitle("Chatter")
-        self.setMinimumSize(800, 600)
+        self.setMinimumSize(1000, 600)
 
         # Set gradient background
         self.setAutoFillBackground(True)
@@ -43,7 +57,7 @@ class MainWindow(QtWidgets.QMainWindow):
         # Create big font white text in the middle
         self.label = QtWidgets.QLabel("Hello World!", self)
         self.label.setAlignment(QtCore.Qt.AlignCenter)
-        self.label.setStyleSheet("color: white; font: 20pt")
+        self.label.setStyleSheet("color: white; font: 15pt; font-weight: bold; width: 100%;")
         self.setCentralWidget(self.label)
 
         # Create map button on top left
@@ -71,7 +85,14 @@ class MainWindow(QtWidgets.QMainWindow):
         self.sound_thread = SoundThread()
         self.sound_thread.finished.connect(self.sound_thread.deleteLater)
         self.sound_thread.start()
-   
+
+
+        timer = QTimer(self)
+        timer.timeout.connect(self.update_label)
+        timer.start(1000)
+
+
+    
     def closeApp(self):
         QtCore.QCoreApplication.instance().quit()
 
@@ -79,6 +100,25 @@ class MainWindow(QtWidgets.QMainWindow):
     def openMap(self):
         self.map_window = MapWindow(self)
         self.map_window.show()
+
+
+
+    def update_label(self):
+        #get current running time
+        global time
+        with open(trt, "r") as f:
+            tr = json.load(f)
+        
+        segments = tr["segments"]
+        print(f"Time: {time}")
+        for segment in segments:
+            if segment["start"] <= time <= segment["end"]:
+                self.label.setText(segment["text"])
+                break
+
+
+        time +=1
+
 
 if __name__ == "__main__":
     
