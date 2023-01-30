@@ -18,3 +18,4 @@ PyQtWebEngine-Qt5==5.15.2
 pyreadline==2.1
 pydub==0.25.1
 simpleaudio==1.0.4
+django-cors-headers==3.13.0
