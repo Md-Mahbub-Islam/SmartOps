@@ -2,11 +2,29 @@
     background: #363636;
     color: #fff;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .feature {
     background: #363636;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.fea-text {
+    width: 800px;
+    height: 500px;
+    box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
+    background: #363636;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
 }
 .items-list {
     list-style-type: none;
@@ -45,4 +63,14 @@ button {
     color: #fff;
     font-size: 24px;
     cursor: pointer;
+}
+
+.transcript{
+    width: 650px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.feature {
+
 }
