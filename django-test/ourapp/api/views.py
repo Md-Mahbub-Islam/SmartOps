@@ -10,6 +10,6 @@ class ParagraphView(views.APIView):
         paragraph = get_object_or_404(Paragraph, pk=pk)
         text = paragraph.text
 
-        # text = ""
+        #text = "quick brown fox"
 
         return JsonResponse({"paragraph": text})
