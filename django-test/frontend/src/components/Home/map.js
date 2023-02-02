@@ -12,7 +12,7 @@ function RealTimeMap() {
       setMap(googleMap);
     };
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap`;
+    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA5sX2X6ZskoeZopQS0jS7bhK4_gG05la0 &callback=initMap';
     document.head.appendChild(script);
 
     return () => {
