@@ -1,9 +1,10 @@
 import React from 'react';
-import { state, setState, useState, useEffect, handleClick } from 'react'
+import { useState, useEffect } from 'react'
 import { Button } from '../Button';
 import './MainDisplay.css'
 import './Ships.css'
 import './Map.css'
+import WhoTalking from './WhoTalking';
 
 const Layout = () => {
     return (
@@ -60,6 +61,7 @@ const MainContent = () => (
     <div style={{ width: '80%', height: '100%', backgroundColor: '#000' }}>
         <Ships />
         <MainDisplay />
+        {/*<button>Who's Speaking</button>*/}
     </div>
 );
 
@@ -71,24 +73,50 @@ const items = [
     { id: 3, title: 'MMSI', name: '314159265' },
     { id: 4, title: 'Call sign', name: 'ABCD' },
 ];
-const MainDisplay = () => (
-    <div style={{ height: '50%' }}>
-        <div className="home_content">
-            <h1>Speaking now</h1>
-            <div className="signal">
-                <img src="../Assets/Vector.png" alt="freq"></img>
+
+const MainDisplay = () => {
+    const [data, setData] = useState(null);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await fetch('http://127.0.0.1:8000/paragraph/1/');
+            const result = await response.json();
+            setData(result);
+        };
+
+        const intervalId = setInterval(() => {
+            fetchData();
+        }, 300); // fetch data every x miliseconds
+
+        return () => {
+            clearInterval(intervalId);
+        };
+    }, []);
+
+    // making a popup
+    const [showWhoTalking, setShowWhoTalking] = useState(false)
+
+    const openWhoTalking = ()=> {
+        setShowWhoTalking(prev => !prev)
+    }
+
+    return (
+        <div className="container">
+            <div className="home_content">
+                <h1>Speaking now</h1>
+                <div className="signal">
+                    <img src="../Assets/Vector.png" alt="freq"></img>
+                </div>
+                <div className="transcript">{data ? data.paragraph : 'Loading...'}</div>
+                {/* <button>Who's talking</button> */}
+                <button onClick={openWhoTalking}>Who's talking</button>
+                <WhoTalking showWhoTalking={showWhoTalking} setShowWhoTalking={setShowWhoTalking}/>
             </div>
-            <div className="feature">
-                <ul className="items-list">
-                    {items.map(item => (
-                        <Item key={item.id} title={item.title} name={item.name} />
-                    ))}
-                </ul>
-            </div>
-            <button>Who's talking</button>
+            
         </div>
-    </div>
-);
+    );
+};
+
 const Item = ({ title, name }) => (
     <li className="item">
         <h2>{title}</h2>
