@@ -1,20 +1,5 @@
 import React from 'react'
-import {MdClose} from 'react-icons/md'
-import styled from 'styled-components'
 import './MainDisplay.css'
-
-
-//closing the pop up
-const ClosePopUp = styled(MdClose)`
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 32px;
-    height: 32px;
-    padding: 0;
-    z-index: 10;
-`
 
 // The display for the information
 const items = [
@@ -41,8 +26,7 @@ const WhoTalking = ({showWhoTalking, setShowWhoTalking}) => {
                         <Item key={item.id} title={item.title} name={item.name} />
                     ))}
                 </ul>
-                <button onClick={()=> setShowWhoTalking(prev => !prev)}>Who's Speaking</button>
-                {/*<ClosePopUp aria-label='Close popup' onClick={()=> setShowWhoTalking(prev => !prev)}></ClosePopUp>*/}
+                <button>Who's Speaking</button>
             </div>
         : null}
     </>    

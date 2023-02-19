@@ -7,26 +7,11 @@
     font-size: 20px;
 }
 
-.logoWrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.logo {
-    width: 80px;
-    padding: 10px 0px 0px 5px;
-}
-
 .navbar-logo {
-    /* color: linear-gradient(90deg, rgb(94, 158, 254) 0%, rgba(94, 249, 254) 100%); 
+    /* color: linear-gradient(90deg, rgb(94, 158, 254) 0%, rgba(94, 249, 254) 100%); */
     background: -webkit-linear-gradient(90deg, rgb(94, 158, 254) 0%, rgba(94, 249, 254) 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;*/
-    color: #F5F5F5;
-    font-size: 64px;
-    font-weight: 300;
-    line-height: 96px;
+    -webkit-text-fill-color: transparent;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;

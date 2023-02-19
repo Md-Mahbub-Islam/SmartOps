@@ -5,7 +5,6 @@ import './MainDisplay.css'
 import './Ships.css'
 import './Map.css'
 import WhoTalking from './WhoTalking';
-import Map from './Map';
 
 const Layout = () => {
     return (
@@ -31,37 +30,18 @@ const Sidebar = () => {
 };
 
 
-{/*const Map = ({ isExpanded }) => {
+const Map = ({ isExpanded }) => {
     const mapStyle = {
         height: isExpanded ? '100%' : '30%',
     };
-    const [map, setMap] = useState(null);
-
-    useEffect(() => {
-        const initMap = () => {
-        const googleMap = new window.google.maps.Map(document.getElementById('map'), {
-            center: { lat: 37.7749, lng: -122.4194 },
-            zoom: 13
-        });
-        setMap(googleMap);
-        };
-        const script = document.createElement('script');
-        script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA5sX2X6ZskoeZopQS0jS7bhK4_gG05la0 &callback=initMap';
-        document.head.appendChild(script);
-
-        return () => {
-            document.head.removeChild(script);
-        };
-    }, []);
 
     return (
         <div className='map-container' style={mapStyle}>
             <h2 style={{ fontSize: '18px', textAlign: 'center' }}>Map</h2>
-            <div id="map" style={{ height: '200px', width: '100%' }} />
-            {/*<img src="/images/map.jpg" alt="Map" style={{ width: '100%' }} />*/}
-        {/*</div>
+            <img src="/images/map.jpg" alt="Map" style={{ width: '100%' }} />
+        </div>
     );
-};*/}
+};
 
 
 const ConversationLog = () => (
@@ -125,7 +105,7 @@ const MainDisplay = () => {
             <div className="home_content">
                 <h1>Speaking now</h1>
                 <div className="signal">
-                    <img src="../Assets/Property1=Variant2.png" alt="freq"></img>
+                    <img src="../Assets/Vector.png" alt="freq"></img>
                 </div>
                 <div className="transcript">{data ? data.paragraph : 'Loading...'}</div>
                 {/* <button>Who's talking</button> */}
@@ -164,13 +144,10 @@ const Ships = () => (
 );
 
 const Ship = ({ name, captain }) => (
-    <div className='shipWrapper'>
-        <div className="ship_img">
-            <img src={`../Assets/ships/icon.png`} alt={name} />
-            {/*<img src={`../Assets/ships/${name}.png`} alt={name} />
-            <h2>{name}</h2>
-            <p>Captain: {captain}</p> */}
-        </div>
+    <div className="ship_img">
+        <img src={`/Assets/ships/${name}.jpg`} alt={name} />
+        {/* <h2>{name}</h2>
+        <p>Captain: {captain}</p> */}
     </div>
 );
 

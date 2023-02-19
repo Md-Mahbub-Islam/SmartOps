@@ -1,26 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import React, { Component } from 'react';
 
-function RealTimeMap() {
-  const [map, setMap] = useState(null);
+class Map extends Component {
+    constructor(props) {
+    super(props);
+    this.mapRef = React.createRef();
+    }
 
-  useEffect(() => {
-    const initMap = () => {
-      const googleMap = new window.google.maps.Map(document.getElementById('map'), {
-        center: { lat: 37.7749, lng: -122.4194 },
-        zoom: 13
-      });
-      setMap(googleMap);
-    };
-    const script = document.createElement('script');
-    script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyA5sX2X6ZskoeZopQS0jS7bhK4_gG05la0 &callback=initMap';
-    document.head.appendChild(script);
+    componentDidMount() {
+        YOUR_API_KEY = 'AIzaSyA5sX2X6ZskoeZopQS0jS7bhK4_gG05la0 &callback=initMap'
+        const googleMapsScript = document.createElement('script');
+        googleMapsScript.src = `https://maps.googleapis.com/maps/api/js?key=${YOUR_API_KEY}`;
+        window.document.body.appendChild(googleMapsScript);
 
-    return () => {
-      document.head.removeChild(script);
-    };
-  }, []);
+        googleMapsScript.addEventListener('load', () => {
+            this.map = new window.google.maps.Map(this.mapRef.current, {
+                center: { lat: 40.712776, lng: -74.005974 },
+                zoom: 12
+            });
+        });
+    }
 
-  return <div id="map" style={{ height: '400px', width: '100%' }} />;
+    render() {
+        const style = {
+            width: '100%',
+            height: '400px'
+        };
+
+        return <div style={style} ref={this.mapRef} />;
+    }
 }
 
-export default RealTimeMap;
+export default Map;

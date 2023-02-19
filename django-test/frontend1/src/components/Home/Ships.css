@@ -4,19 +4,13 @@
     background: #363636;
     overflow-x: scroll; 
     white-space: nowrap;
-    margin: 10px;
     /* width: 80%;  */
 }
 
-.shipWrapper {
+.ship_img {
     margin: 2px 5px;
     width: 174px;
     border: 2px solid;
     border-radius: 50%;
     text-align: center;
-}
-
-.ship_img {
-    width: 80px;
-    margin: auto;
 }
